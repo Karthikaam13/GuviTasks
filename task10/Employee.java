@@ -59,19 +59,15 @@ public class Employee {
         return "Employee[id=" + id + ", name=" + getName() + ", salary=" + salary + "]";
     }
 
-    // Main method for testing
+    
     public static void main(String[] args) {
         // Create an Employee object
         Employee employee = new Employee(1, "John", "Doe", 50000);
 
-        // Print employee details
         System.out.println("Original Employee Details:");
         System.out.println(employee);
-
         // Raise salary by 10%
         employee.raiseSalary(10);
-
-        // Print updated employee details
         System.out.println("\nEmployee Details After Raise:");
         System.out.println(employee);
     }
